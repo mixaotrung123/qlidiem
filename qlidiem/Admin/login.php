@@ -42,7 +42,7 @@ if (isset($_POST['login'])) {
         exit;
     } else {
         // Đăng nhập thất bại
-        echo "Đăng nhập thất bại. Vui lòng kiểm tra thông tin đăng nhập của bạn.";
+        echo "<script> alert('Đăng nhập thất bại. Vui lòng kiểm tra thông tin đăng nhập của bạn.')</script>";
     }
 }
 ?>

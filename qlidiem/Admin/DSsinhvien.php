@@ -15,13 +15,13 @@
    
    // kiểm tra dữ liệu mã loại rỗng
    if($msv==''){   
-   echo "<script> alert('Yêu cầu nhập mã sinh viên')</script>";
+   "<script> alert('Yêu cầu nhập mã sinh viên')</script>";
    }
    //kiểm tra trùng khoá chính
    $sql1="SELECT * FROM sinhvien WHERE masv ='$msv'";
    $dt=mysqli_query($con,$sql1);
    if(mysqli_num_rows($dt)>0){
-   echo "<script> alert('Trùng mã')</script>";
+    "<script> alert('Trùng mã')</script>";
    }
    else{
     //tạo và thực hiện truy vấn chèn dữ liệu vào bảng loaisach
